@@ -21,10 +21,6 @@ body {
     margin: 0;
 }
 
-header {
-    background-color: #f3f6f6;
-}
-
 h1,
 h2,
 h3 {
@@ -73,6 +69,25 @@ article {
     height: 1px;
     overflow: hidden;}
 
+
+.section--process {
+    display: flex;
+    flex-wrap: wrap;         /* LOOK THIS UP*/
+    text-align: center;
+}
+
+.section--process article {
+    width: 50%;
+    padding: 0 2.5rem;
+    white-space: nowrap;
+
+}
+
+@media only screen and (min-width: 500px) {   /*ALWAYS PUT THIS IN CSS*/
+    .section--promo article {
+    width: 50%;
+    }
+}
     /* nagivation
     ***********************************************/
     nav a {
@@ -80,13 +95,22 @@ article {
         padding: .25rem 1rem;
         text-decoration: none;
         color: #22252e;
+        white-space: nowrap;
+        width: 100%;
+        text-align: center;
         font-size: 0.75rem;
     }
 
     nav ul {
         display: flex;
+        flex-wrap: wrap;
         list-style: none;
         padding-left: 0;
+        margin: 0;
+    }
+
+    nav li {
+        flex: 1;
     }
 
     nav a:hover,
@@ -95,7 +119,25 @@ article {
         color: white;
     }
 
+        /* Header
+******************************************************/
 
+header {
+    background-color: #f3f6f6;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    margin: 0 1rem;
+
+}
+
+.logo-img {
+    size: 0.75rem;
+}
     /* Utilities
 ******************************************************/
 
@@ -109,4 +151,36 @@ article {
     white-space: nowrap;
     }
 
+.accessible-hidden: focus { /* ALWAYS IN A CSS DOC8 */
+    position: absolute;
+    top: 0;
+    left: -999px;
+    height: 1px;
+    width: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;
+    }
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    }
+
+.about-image {
+    flex: 1 1 320px;
+    margin-right: 2rem;
+    text-align: center;
+    }
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 50%;
+    }
+
+.about-text {
+    flex: 1 0 300px;
+    max-width: 100%;
+    padding: 0 2rem;
+    }
 
