@@ -8,6 +8,7 @@
     <title>Mireille Bobbert Portfolio</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
 </head>
 
@@ -16,7 +17,7 @@
 
     <header>
         <a href="index.html" class="logo-link">
-            <img src="images/logoMB.png" alt="My portfolio" class="logo-img">
+            <img src="images/logo-mb-2.png" alt="My portfolio" class="logo-img">
         </a>
         <nav>
             <ul>
@@ -42,13 +43,13 @@
     <main id="content">
         <section id="home" class="section section--home">
             <div class="jumbotron">
-                <h1>Hi, I'm <strong class="name">Mireille Bobbert</strong></h1>
+                <h1 class="jumbotron-text">Hi, I'm <strong class="name">Mireille Bobbert</strong></h1>
 
-                <h2>I'm a full-stack developer</h2>
+                <h2 class="jumbotron-text">I'm a full-stack developer</h2>
             </div>
         </section>
 
-        <section id="collaborating">
+        <section id="collaborating" class="section section--collaborating">
 
             <p>Let's work together to create amazing products. I work with my clients from the idea stage until the fully functioning
                 web application.</p>
@@ -60,19 +61,23 @@
             <h1 class="sr-only"></h1>
             <article>
                 <h2>Discover</h2>
-                    <p>Text</p>
+                <i class="fa fa-comments fa-3x" aria-hidden="true"></i>
+                    <p>Tell me about your project and we brainstorm together to create a plan for your product to launch.</p>
             </article>
             <article>
                 <h2>Design</h2>
-                    <p>Text</p>
+                <i class="fa fa-pencil fa-3x" aria-hidden="true"></i>
+                    <p>We design the wireframe and agree together how to create the best experience for your users to present your brand.</p>
             </article>
             <article>
                 <h2>Deploy </h2>
-                    <p>Text</p>
+                <i class="fa fa-code fa-3x" aria-hidden="true"></i>
+                    <p>We protoype and develop your product. We work together intensily to incorporate your feedback.</p>
             </article>
             <article>
                 <h2>Be ready</h2>
-                    <p>Text</p>
+                <i class="fa fa-line-chart fa-3x" aria-hidden="true"></i>
+                    <p>We deploy your product and now your website is ready to get the traction. Get out there and grow your audience.</p>
             </article>
         </section>
 
@@ -90,6 +95,49 @@
                         <li>Laravel 70%</li>
                         <li>UX 70%</li>
                     </ul>
+
+                    <figure class="barchart-skills">
+                        <div class="chart HTML">
+                            <div class="barchart barchart--text">HTML</div>
+                            <div class="barchart barchart--proficiency barchart--proficiency-80"></div>
+                            <div class="barchart barchart--100-proficiency">80%</div>
+                        </div>
+                        <div class="chart CSS">
+                            <div class="barchart barchart--text">CSS, Sass</div>
+                            <div class="barchart barchart--proficiency barchart--proficiency-70"></div>
+                            <div class="barchart barchart--100-proficiency">70%</div>
+                        </div>
+                        <div class="chart Javascript">
+                            <div class="barchart barchart--text">Javascript</div>
+                            <div class="barchart barchart--proficiency barchart--proficiency-60"></div>
+                            <div class="barchart barchart--100-proficiency">60%</div>
+                            </div>
+                        <div class="chart React">
+                            <div class="barchart barchart--text">React</div>
+                            <div class="barchart barchart--proficiency barchart--proficiency-60"></div>
+                            <div class="barchart barchart--100-proficiency">60%</div>
+                        </div>
+                        <div class="chart jquery">
+                            <div class="barchart barchart--text">jQuery</div>
+                            <div class="barchart barchart--proficiency barchart--proficiency-60"></div>
+                            <div class="barchart barchart--100-proficiency">60%</div>
+                        </div>
+                        <div class="chart PHP">
+                            <div class="barchart barchart--text">PHP</div>
+                            <div class="barchart barchart--proficiency barchart--proficiency-60"></div>
+                            <div class="barchart barchart--100-proficiency">60%</div>
+                        </div>
+                            <div class="chart Laravel">
+                            <div class="barchart barchart--text">Laravel</div>
+                            <div class="barchart barchart--proficiency barchart--proficiency-60"></div>
+                            <div class="barchart barchart--100-proficiency">60%</div>
+                        </div>
+                        <div class="chart UX">
+                                <div class="barchart barchart--text">UX</div>
+                                <div class="barchart barchart--proficiency barchart--proficiency-80"></div>
+                                <div class="barchart barchart--100-proficiency">80%</div>
+                        </div>
+                    </figure>
 
         </section>
 
@@ -118,7 +166,7 @@
                     <p>Tech Stack: HTML, CSS, Javascript</p>
 
                 <h3>Title</h3>
-                    <p>Description for hackathon project #1 Description for hackathon project #1 Description for hackathon project #1 </p>
+                    <p>Description for hackathon project #1</p>
                     <p>Tech Stack: HTML, CSS, Javascript</p>
 
         </section>
@@ -128,19 +176,31 @@
                 <h2>ABOUT ME</h2>
                 <div class="about">
                         <div class="about-image">
-                            <img src="http://satyr.io/300x300/red" alt="Mireille Bobbert">
+                            <img src="images/mireille-bobbert.png" alt="Mireille Bobbert">
                         </div>
                         <div class="about-text">
-                            <p>I love finding out about problems to solve, thinking of the best way to get to a solution, and build and test the application.</p>
+                            <p>Since launching <a href="https://youtu.be/XKTLbsNpTA0" >Whever</a> - a location based app that tells you when your friends will arrive - I have been fascinated by software. As neither my co-founders nor I didn't knew how to code, we hired developers. Despite the fact that Whever was a <a href="http://www.mireillebobbert.com/2017/11/23/lessons-whever/" >complete failure</a>, my interest in coding and launching new things has only grown. Now, I know how to code my own apps.
+                            </p>
+                            <p>In my spare time, I love to <a href="http://www.mireillebobbert.com" >blog</a>, run, and <a href="http://www.mireillebobbert.com/2017/07/02/the-user-experience-of-a-lifetime-glossier/" >analyze online user journeys</a>.</p>
                         </div>
                 </div>
-                </section>
+        </section>
 
-        <section class="section section--light">
+        <section id="find-me" class="section section--light">
+
                 <h2>FIND ME HERE</h2>
-                    <p>Github logo</p>
-                    <p>Linkedin logo</p>
-                    <p>Wordpress logo</p>
+                <div class="find-me">
+                    <p>
+                        <a href="https://github.com/mbobbert"><i class="fa fa-github fa-5x" aria-hidden="true"></i></a>
+                    </p>
+                    <p>
+                        <a href="www.linkedin.com/in/mireillebobbert"><i class="fa fa-linkedin fa-5x" aria-hidden="true"></i></a>
+                    </p>
+                    <p>
+                        <a href="http://www.mireillebobbert.com"><i class="fa fa-wordpress fa-5x" aria-hidden="true"></i></a>
+                    </p>
+                </div>
+
         </section>
 
         <section id="contact" class="section">
@@ -151,6 +211,16 @@
 
         <section id="hello" class="section section--light">
                 <h2>NICE TO MEET YOU!</h2>
+                <div class="hello"><p>
+                        <a href="https://github.com/mbobbert"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+                    </p>
+                    <p>
+                        <a href="www.linkedin.com/in/mireillebobbert"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+                    </p>
+                    <p>
+                        <a href="http://www.mireillebobbert.com"><i class="fa fa-wordpress fa-2x" aria-hidden="true"></i></a>
+                    </p>
+                </div>
         </section>
 
 

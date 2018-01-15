@@ -1,9 +1,9 @@
 /*                                          /* ALWAYS IN A CSS DOC8
-primary: light blue:  #cfdce7
-secondary: medium blue: #7694c2
-text color: dark blue: #22252e
 light-grey: base:  #f3f6f6
-
+darker-grey: #dadddd
+dark pink: #5C2329
+old pink: #943F4F
+light pink: #C46266
 */
 
 /* apply a natural box layout model to all elements, but allowing components to change */
@@ -28,6 +28,10 @@ h3 {
     color: #22252e;
 }
 
+h1 {
+    font-size: 3rem;
+}
+
 .section {
     padding: 30px 50px 30px 50px;
 }
@@ -37,7 +41,7 @@ h3 {
 }
 
 .section--dark {
-    background-color: #7694c2;
+    background-color: #943F4F
 }
 
 .section--home {
@@ -47,7 +51,11 @@ h3 {
    padding-bottom: 16vw;
     background-position: center;
     background-size: cover;
-    background-image: url("../images/nepal_hero_image.jpg");
+    background-image: url("../images/anish-kapoor-tokyo-front.jpg");
+}
+
+.section--collaborating {
+    text-align: center;
 }
 
 article {
@@ -57,12 +65,17 @@ article {
 
 }
 
-.name {
-    text-decoration: underline;
-    color: #7694c2;
+.jumbotron-text {
+    color: white;
 }
 
-.sr-only {
+.name {
+    text-decoration: underline;
+    text-decoration-color: white;
+    color: #C46266;
+}
+
+.sr-only {                  /* ALWAYS COPY THIS IN WHEN AN H1 SHOULD BE HIDDEN */
     position: absolute;
     left: -10000px;
     top: auto;
@@ -95,6 +108,7 @@ article {
 }
 /* nagivation
 ***********************************************/
+
 nav a {
     display: block;
     padding: .25rem 1rem;
@@ -120,7 +134,7 @@ nav li {
 
 nav a:hover,
 nav a:focus {                           /* ALWAYS IN A CSS DOC8 */
-    background-color: #cfdce7;
+    background-color: #943F4F;
     color: white;
 }
 
@@ -189,3 +203,83 @@ header {
     padding: 0 2rem;
     }
 
+div.about-text a {
+    color: #943F4F;
+}
+
+div.about-text a:hover {
+    color: #C46266;
+}
+
+
+.find-me a:link {
+    color: #22252e;
+}
+
+.find-me a:visited {
+    color: #22252e;
+}
+
+.find-me {
+    display: flex;
+    justify-content: space-around;
+}
+
+.hello {
+    display: flex;
+    justify-content: space-around;
+}
+
+.hello a:link {
+    color: #dadddd
+}
+
+.hello a:visited {
+    color: #dadddd;
+}
+
+.chart {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0.5rem;
+}
+
+.barchart--text {
+    height: 2rem;
+    width: 8rem;
+    border: 1px solid #943F4F;
+    background-color: #943F4F;
+    min-width: 6.5rem;
+}
+
+.barchart--proficiency {
+    height: 2rem;
+    border: 1px solid #C46266;
+    background-color: #C46266;
+}
+
+.barchart--proficiency-60 {
+    width: 32rem;
+
+}
+
+.barchart--proficiency-70 {
+    width: 34rem;
+
+}
+
+.barchart--proficiency-80 {
+    width: 36rem;
+}
+
+.barchart--100-proficiency {
+    height: 2rem;
+    width: 8rem;
+    border: 1px solid #f3f6f6;
+    background-color: #f3f6f6;;
+}
+
+.section--process .fa {
+    color: #943F4F;
+}
