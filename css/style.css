@@ -1,7 +1,6 @@
 /*                                          /* ALWAYS IN A CSS DOC8
 light-grey: base:  #f3f6f6
-darker-grey: #dadddd
-dark pink: #5C2329
+text color: dark blue: #22252e
 old pink: #943F4F
 light pink: #C46266
 */
@@ -109,33 +108,47 @@ article {
 /* nagivation
 ***********************************************/
 
-nav a {
-    display: block;
-    padding: .25rem 1rem;
-    text-decoration: none;
-    color: #22252e;
-    white-space: nowrap;
-    width: 100%;
-    text-align: center;
-    font-size: 0.75rem;
-}
-
-nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
-}
-
-nav li {
-    flex: 1;
-}
-
+/*nav a {
+    /*display: block;
+    /*padding: .25rem 1rem;
+    /*text-decoration: none;
+    /*color: #22252e;
+    /*white-space: nowrap;
+    /*width: 100%;
+    /*text-align: center;
+    /*font-size: 0.75rem;
+/*}
+/*
+/*nav ul {
+    /*display: flex;
+    /*flex-wrap: wrap;
+    /*list-style: none;
+    /*padding-left: 0;
+    /*margin: 0;
+/*}
+/*
+/*nav li {
+    /*flex: 1;
+/*}
+*/
 nav a:hover,
 nav a:focus {                           /* ALWAYS IN A CSS DOC8 */
     background-color: #943F4F;
     color: white;
+}
+
+
+/* from here i;m trying to get the nav to display correctly */
+
+nav {
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    list-style: none;
+    padding: 1rem;
+    color: #22252e;
 }
 
         /* Header
@@ -144,7 +157,7 @@ nav a:focus {                           /* ALWAYS IN A CSS DOC8 */
 header {
     background-color: #f3f6f6;
     display: flex;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
 }
 
 .logo-link {
@@ -282,4 +295,8 @@ div.about-text a:hover {
 
 .section--process .fa {
     color: #943F4F;
+}
+
+.section--body--header h2 {
+    text-align: center;
 }
